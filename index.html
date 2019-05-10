@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!--custom css-->
+        <link rel="stylesheet" href="/css/main.css">
+        <title>Rock-Paper-Scissors</title> 
+    </head>
+    <body>
+        <!--navbar-->
+        <section>
+            <nav class="navbar navbar-dark bg-dark">
+                <p class="navbar-brand">Rock-Paper-Scissors</p>
+            </nav>
+        </section>
+        <!--game area-->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title text-center">Rock</div>
+                        <div class="text-center">
+                            <button id="rock" class="btn btn-primary">Choose</button>            
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card paper">
+                    <div class="card-body">
+                        <div class="card-title text-center">Paper</div>
+                        <div class="text-center">
+                            <button id="paper" class="btn btn-primary">Choose</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card scissor">
+                    <div class="card-body">
+                        <div class="card-title text-center">Scissor</div>
+                        <div class="text-center">
+                            <button id="scissor" class="btn btn-primary">Choose</button>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
