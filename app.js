@@ -3,6 +3,9 @@ const rockEle = document.getElementById("rock")
 const scissorEle = document.getElementById("scissor")
 const paperEle = document.getElementById("paper")
 
+const result = document.getElementById("result")
+const rethrowBtn = document.querySelector(".rethrow")
+
 const choices = ["r", "s", "p"]
 let compInput = ""
 let userInput = ""
@@ -33,26 +36,27 @@ paperEle.addEventListener("click", function(event) {
 //function to compare inputs and get result//
 var getResult = () => {
     computersSelection()
-    console.log(compInput, userInput)
     
     //Switch to compare input and declare result//
     switch(userInput+compInput){
         case "rs":
         case "pr":
         case "sp":
-            console.log("You won")
+            result.textContent = "You won!!!"
             break;
         case "rr":
         case "ss":
         case "pp":
-            console.log("It's an Tie")
+            result.textContent = "It's an Tie"
+            rethrowBtn.classList.remove("hide")
             break;
         case "rp":
         case "ps":
         case "sr":
-            console.log("You lose")
-            break;
+            result.textContent = "Sorry, You lost"
+            break;            
     }
+
 }
 
 
