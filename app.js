@@ -49,6 +49,9 @@ var getResult = () => {
         case "pp":
             result.textContent = "It's an Tie"
             rethrowBtn.classList.remove("hide")
+            rockEle.classList.add("hide")
+            scissorEle.classList.add("hide")
+            paperEle.classList.add("hide")
             break;
         case "rp":
         case "ps":
